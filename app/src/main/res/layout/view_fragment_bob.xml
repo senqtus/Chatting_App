@@ -1,0 +1,40 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Bob"
+        android:textSize="30dp">
+    </TextView>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/sendToA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Message to Alice">
+        </Button>
+
+        <EditText
+            android:id="@+id/messageB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter the message">
+        </EditText>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/bobChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>
